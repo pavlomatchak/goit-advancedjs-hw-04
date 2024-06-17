@@ -13,7 +13,7 @@ let images = '';
 function onSubmit() {
   fetchImages(query, page)
   .then(({ data }) => {
-    totalPages = Math.ceil(data.totalHits / 100);
+    totalPages = Math.ceil(data.totalHits / 40);
 
     if (data.totalHits === 0) {
       iziToast.error({

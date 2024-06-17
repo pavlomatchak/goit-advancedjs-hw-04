@@ -7,7 +7,7 @@ export function fetchImages(query, page) {
 
   return axios({
     method: 'get',
-    url: `https://pixabay.com/api/?key=${API_KEY}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true&per_page=100&page=${page}`,
+    url: `https://pixabay.com/api/?key=${API_KEY}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${page}`,
     responseType: 'json',
   });
 }
